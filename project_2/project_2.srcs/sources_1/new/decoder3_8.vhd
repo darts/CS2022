@@ -20,14 +20,14 @@ constant gate_delay: Time := 5ns;
 begin
    process ( sel)
 		begin
-			out0 <= ((not sel(0)) and (not sel(1)) and (not sel(2))) after gate_delay;
-            out1 <= (sel(0) and (not sel(1)) and (not sel(2))) after gate_delay;
-            out2 <= ((not sel(0)) and sel(1) and (not sel(2))) after gate_delay;
-            out3 <= (sel(0) and sel(1) and (not sel(2))) after gate_delay;
-            out4 <= ((not sel(0)) and (not sel(1)) and sel(2)) after gate_delay;
-            out5 <= (sel(0) and (not sel(1)) and sel(2)) after gate_delay;
-            out6 <= ((not sel(0)) and sel(1) and sel(2)) after gate_delay;
-            out7 <= (sel(0) and sel(1) and sel(2)) after gate_delay;
+			out7 <= ((not sel(0)) and (not sel(1)) and (not sel(2))) after gate_delay;
+            out6 <= (sel(0) and (not sel(1)) and (not sel(2))) after gate_delay;
+            out5 <= ((not sel(0)) and sel(1) and (not sel(2))) after gate_delay;
+            out4 <= (sel(0) and sel(1) and (not sel(2))) after gate_delay;
+            out3 <= ((not sel(0)) and (not sel(1)) and sel(2)) after gate_delay;
+            out2 <= (sel(0) and (not sel(1)) and sel(2)) after gate_delay;
+            out1 <= ((not sel(0)) and sel(1) and sel(2)) after gate_delay;
+            out0 <= (sel(0) and sel(1) and sel(2)) after gate_delay;
 	end process;
 	
 end Behavioral;

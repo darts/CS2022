@@ -5,7 +5,7 @@ entity regfile8x16bit_testbench is
 end regfile8x16bit_testbench;
 
 architecture Behavioral of regfile8x16bit_testbench is
-    component regfile8x16bit_testbench 
+    component regfile8x16bit 
     port (
         src_s : in STD_LOGIC_VECTOR (2 downto 0);
         des_A : in STD_LOGIC_VECTOR (2 downto 0);
@@ -32,7 +32,7 @@ architecture Behavioral of regfile8x16bit_testbench is
 begin
 
     --uut
-    uut: regfile8x16bit_testbench port map(
+    uut: regfile8x16bit port map(
         src_s => src_s,
         des_A => des_A,
         data => data,
@@ -55,50 +55,63 @@ begin
         --load hex 0 to reg0
         des_A <= "000";
         data_src <= "0";
-        data <= x"00";
+        data <= x"0000";
         wait for clk_period*5;
         
         --load hex 1 to reg1
         des_A <= "001";
         data_src <= "0";
-        data <= x"01";
+        data <= x"0001";
         wait for clk_period*5;
         
         --load hex 2 to reg2
         des_A <= "010";
         data_src <= "0";
-        data <= x"02";
+        data <= x"0002";
         wait for clk_period*5;
         
         --load hex 3 to reg3
         des_A <= "011";
         data_src <= "0";
-        data <= x"03";
+        data <= x"0003";
         wait for clk_period*5;
         
         --load hex 4 to reg4
         des_A <= "100";
         data_src <= "0";
-        data <= x"04";
+        data <= x"0004";
         wait for clk_period*5;
         
         --load hex 5 to reg5
         des_A <= "101";
         data_src <= "0";
-        data <= x"05";
+        data <= x"0005";
         wait for clk_period*5;
         
         --load hex 6 to reg6
         des_A <= "110";
         data_src <= "0";
-        data <= x"06";
+        data <= x"0006";
         wait for clk_period*5;
         
         --load hex 7 to reg7
         des_A <= "111";
         data_src <= "0";
-        data <= x"07";
+        data <= x"0007";
+        wait for clk_period*5;
+        
+        --move value from reg0 to reg1
+        src_s <= "000";
+        data_src <= "1";
+        des_A <= "001";
+        wait for clk_period*5;
+        
+        --move value from reg5 to reg7
+        src_s <= "101";
+        data_src <= "1";
+        des_A <= "111";
         wait for clk_period*5;
     end process;
+    
 
 end Behavioral;

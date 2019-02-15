@@ -1,7 +1,19 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 101e125964f14d4db5186254eb76674c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile8x16bit_behav xil_defaultlib.regfile8x16bit -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 101e125964f14d4db5186254eb76674c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile8x16bit_testbench_behav xil_defaultlib.regfile8x16bit_testbench -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.reg16 [reg16_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux2_16bit [mux2_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux8_16bit [mux8_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.decoder3_8 [decoder3_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.regfile8x16bit [regfile8x16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.regfile8x16bit_testbench
+Built simulation snapshot regfile8x16bit_testbench_behav
