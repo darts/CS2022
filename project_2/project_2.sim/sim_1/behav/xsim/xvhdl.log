@@ -1,5 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "F:/main_project/main_project.srcs/sources_1/new/mux2_16bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity mux2_16bit
-ERROR: [VRFC 10-91] in2 is not declared [F:/main_project/main_project.srcs/sources_1/new/mux2_16bit.vhd:16]
-ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [F:/main_project/main_project.srcs/sources_1/new/mux2_16bit.vhd:12]
-INFO: [VRFC 10-240] VHDL file F:/main_project/main_project.srcs/sources_1/new/mux2_16bit.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/CS2022/main_project/main_project.srcs/sources_1/new/mux2_16bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux2_16bit'

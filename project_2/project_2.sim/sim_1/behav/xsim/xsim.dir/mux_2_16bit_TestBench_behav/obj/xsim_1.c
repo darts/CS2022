@@ -53,8 +53,8 @@ const int NumRelocateId= 3;
 void relocate(char *dp)
 {
 	iki_relocate(dp, "xsim.dir/mux_2_16bit_TestBench_behav/xsim.reloc",  (void **)funcTab, 3);
-	iki_vhdl_file_variable_register(dp + 2448);
-	iki_vhdl_file_variable_register(dp + 2504);
+	iki_vhdl_file_variable_register(dp + 2528);
+	iki_vhdl_file_variable_register(dp + 2584);
 
 
 	/*Populate the transaction function pointer field in the whole net structure */
@@ -67,7 +67,7 @@ void sensitize(char *dp)
 
 void simulate(char *dp)
 {
-	iki_schedule_processes_at_time_zero(dp, "xsim.dir/mux_2_16bit_TestBench_behav/xsim.reloc");
+		iki_schedule_processes_at_time_zero(dp, "xsim.dir/mux_2_16bit_TestBench_behav/xsim.reloc");
 	// Initialize Verilog nets in mixed simulation, for the cases when the value at time 0 should be propagated from the mixed language Vhdl net
 	iki_execute_processes();
 
