@@ -1,6 +1,6 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 101e125964f14d4db5186254eb76674c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot mux_2_16bit_TestBench_behav xil_defaultlib.mux_2_16bit_TestBench -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 101e125964f14d4db5186254eb76674c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot mux8_16bit_testbench_behav xil_defaultlib.mux8_16bit_testbench -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -10,6 +10,6 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.mux2_16bit [mux2_16bit_default]
-Compiling architecture behavior of entity xil_defaultlib.mux_2_16bit_testbench
-Built simulation snapshot mux_2_16bit_TestBench_behav
+Compiling architecture behavioral of entity xil_defaultlib.mux8_16bit [mux8_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux8_16bit_testbench
+Built simulation snapshot mux8_16bit_testbench_behav
